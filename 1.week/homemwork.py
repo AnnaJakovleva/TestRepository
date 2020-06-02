@@ -10,16 +10,16 @@ eighthValueListOne=int(input("Enter eighth value: "))
 ninthValueListOne=int(input("Enter ninth value: "))
 tenthValueListOne=int(input("Enter tenth value: "))
 
-inputListOne.append(firstValueListOne)
-inputListOne.append(secondValueListOne)
-inputListOne.append(thirdValueListOne)
-inputListOne.append(fourthValueListOne)
-inputListOne.append(fifthValueListOne)
-inputListOne.append(sixthValueListOne)
-inputListOne.append(seventhValueListOne)
-inputListOne.append(eighthValueListOne)
-inputListOne.append(ninthValueListOne)
-inputListOne.append(tenthValueListOne)
+inputListOne.append(firstValueListOne,
+                    secondValueListOne,
+                    thirdValueListOne,
+                    fourthValueListOne,
+                    fifthValueListOne,
+                    sixthValueListOne,
+                    seventhValueListOne,
+                    eighthValueListOne,
+                    ninthValueListOne,
+                    tenthValueListOne)
 
 outputListOne=[firstValueListOne*firstValueListOne,secondValueListOne*secondValueListOne,
 thirdValueListOne*thirdValueListOne,fourthValueListOne*fourthValueListOne,
@@ -104,7 +104,7 @@ if len(outputListOne)>0:
 
 if len(outputListOne)>0:
     tenthValueListTwo=int(input("Enter tenth value list two: "))
-    if ninthValueListTwo==outputListOne[0]:
+    if tenthValueListTwo==outputListOne[0]:
         inputListTwo.append(tenthValueListTwo)
         outputListOne.remove(tenthValueListTwo)
         print(inputListTwo)
