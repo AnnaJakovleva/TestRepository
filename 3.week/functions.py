@@ -68,6 +68,25 @@ def recursive (x):
     recursive(x)
 
 
+def enterShape():
+    UserShapeInput=input("Enter the geometrical shape: ")
+    while UserShapeInput!="triangle" and UserShapeInput!="rectangle" and UserShapeInput!="square":
+        UserShapeInput=input("Enter the geometrical shape again: ")
+
+    if UserShapeInput=="triangle":
+        TriangleSideLenght= int(input("Please enter triangle side length: "))
+        TriangleHeight= int(input("Please enter triangle height: "))
+    areaOfTriangle= TriangleSideLenght*TriangleHeight/2
+    circumferenceOfTriangle= 2*TriangleSideLenght+TriangleHeight
+    return print(areaOfTriangle), print(circumferenceOfTriangle)
+    
+
+
+        
+
+    
+
+
 
 
 
